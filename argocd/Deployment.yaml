@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: bulut-bilisim-devops
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: bulut-bilisim-devops
+  template:
+    metadata:
+      labels:
+        app: bulut-bilisim-devops
+    spec:
+      containers:
+      - name: bulut-bilisim-devops-kub
+        image: furkanbalc/bulutbilisimdevops:v1
+        ports:
+        - containerPort: 8080
