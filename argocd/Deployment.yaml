@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: bulut-bilisim-devops
 spec:
-  replicas: 4
+  replicas: 1
   selector:
     matchLabels:
       app: bulut-bilisim-devops
