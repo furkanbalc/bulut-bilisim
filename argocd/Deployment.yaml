@@ -17,4 +17,3 @@ spec:
         image: furkanbalc/bulutbilisimdevops:v7
         ports:
         - containerPort: 8080
-        #asdasd
